@@ -1,21 +1,21 @@
 class Person{
-  String name;
-  var address;
+  String _name;
+  var _address;
 
   String getName(){
-    return this.name;
+    return this._name;
   }
 
   void setName(String name){
-    this.name = name;
+    this._name = name;
   }
 
   String getAddress(){
-    return this.address;
+    return this._address;
   }
 
   void setAddress(String address){
-    this.address = address;
+    this._address = address;
   }
 }
 
@@ -25,6 +25,6 @@ main(){
   dian.setName("Dian");
   dian.setAddress("Lombok");
 
-  print("Nama: ${dian.name}");
-  print("Alamat: ${dian.address}");
+  print("Nama: ${dian.getName()}");
+  print("Alamat: ${dian.getAddress()}");
 }
